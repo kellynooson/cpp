@@ -6,17 +6,14 @@ int main(){
 	cout<<"Enter any number: ";
 	cin>>a;
 	
-	if(a % 5 == 0){
-		cout<<"This number is divisible by 5"<<endl;
-	}else{
-		cout<<"This number isn't divisible by 5"<<endl;
+	switch (a % 2){
+		case 0:
+			cout<<"This number is even";
+			break;
+		case 1:
+			cout<<"This number is odd";
+			break;
 	}
 	
-	
-	if (a % 11 == 0){
-		cout<<"This number is divisible by 11";
-	}else{
-		cout<<"This number isn't divisible by 11";
-	}
 	return 0;
 }

@@ -2,14 +2,17 @@
 using namespace std;
 
 int main(){
-	
-	double a,b;
-	cout<<"Enter your original buying price: ";
+	char a;
+	cout<<"Enter any letter(including uppercases): ";
 	cin>>a;
-	cout<<"Now enter your selling price of whatever you want(try to make it greater than buying price): ";
-	cin>>b;
 	
-	cout<<b<<" - "<<a<<" = "<<b-a;
-	
+	switch(a){
+		case 'a' || 'e' || 'i' || 'o' || 'u' || 'A' || 'E' || 'I' || 'O' || 'U':
+			cout<<"This is a consonant";
+		default:
+			cout<<"This is a vowel";
+	}
+		
 	return 0;
 }
+

@@ -2,16 +2,18 @@
 using namespace std;
 
 int main(){
-	double a;
-	cout<<"Enter any number including negatives: ";
-	cin>>a;
+	int a, b;
+	cout<<"Enter 2 numbers: ";
+	cin>>a>>b;
 	
-	if(a<0){
-		cout<<"this number is a negative";
-	}else{
-		cout<<"this number is a positive";
+	switch(a > b){
+		case 1:
+			cout<<"Your first number is maximum";
+			break;
+		case 0:
+			cout<<"Your second number is maximum";
+			break;
 	}
-	
 	
 	return 0;
 }
